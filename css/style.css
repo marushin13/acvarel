@@ -1,0 +1,285 @@
+/* Fonts Tahoma */
+@font-face {
+	font-family: "Tahoma";
+	src: url("fonts/9688.eot");
+	src: local("☺"), url("../fonts/9688.woff") format("woff"), url("../fonts/9688.ttf") format("truetype"),
+		url("../fonts/9688.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	background: #fff;
+	font-family: Tahoma, sans-serif;
+	color: #000;
+	line-height: 1.2;
+}
+
+.container {
+	max-width: 1178px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ========================================================= */
+
+.s-top {
+	font-size: 14px;
+}
+
+.s-top__top {
+	padding: 8px 0;
+	background: #77767d;
+	color: #fff;
+}
+
+.s-top__top-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.s-top__top-left {
+	display: flex;
+	align-items: center;
+}
+
+.s-top__address {
+	position: relative;
+	padding-left: 22px;
+	margin-right: 40px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.s-top__address:hover {
+	color: #13a1cf;
+}
+
+.s-top__address::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/s-top__pin-icon.svg) no-repeat center;
+	opacity: 0.7;
+	left: 0;
+	top: 0;
+}
+
+.s-top__clock {
+	position: relative;
+	padding-left: 22px;
+}
+
+.s-top__clock::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/s-top__clock-icon.svg) no-repeat center;
+	opacity: 0.7;
+	left: 0;
+	top: 0;
+}
+
+.s-top__top-right {
+	display: flex;
+	align-items: center;
+}
+
+.s-top__phone {
+	position: relative;
+	padding-left: 22px;
+	margin-right: 40px;
+}
+
+.s-top__phone::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/s-top__call-icon.svg) no-repeat center;
+	opacity: 0.7;
+	left: 0;
+	top: 0;
+}
+
+.phone__link {
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.phone__link:hover {
+	color: #13a1cf;
+}
+
+.s-top__inst-row {
+	background: #13a1cf;
+	border-radius: 30px;
+	padding: 4px 10px 5px 10px;
+	transition: all 0.2s ease;
+}
+.s-top__inst-row:hover {
+	background: #0f7da0;
+}
+
+.s-top__inst {
+	position: relative;
+	padding-left: 22px;
+}
+
+.s-top__inst::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 16px;
+	background: url(../img/icons/s-top__inst-icon.svg) no-repeat center;
+	left: 0;
+	top: 0;
+}
+
+.inst__link {
+	color: #fff;
+}
+
+/* ========================================================= */
+
+.s-top__bottom {
+	padding: 20px 0;
+}
+
+.s-top__bottom-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brands__text {
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #13a1cf;
+	margin-bottom: 14px;
+}
+
+.brands__list {
+	display: flex;
+}
+
+.brands__list-item {
+	margin-right: 42px;
+}
+
+.brands__list-item:last-child {
+	margin-right: 0;
+}
+
+.s-top__bottom-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	font-size: 18px;
+	color: #000;
+}
+
+.s-top__btn {
+	padding: 10px 27px;
+	background: #13a1cf;
+	color: #fff;
+	margin-bottom: 6px;
+	transition: all 0.2s ease;
+}
+
+.s-top__btn:hover {
+	background: #0f7da0;
+}
+
+.s-top__btn-other {
+	padding: 7px 22px;
+	border: 3px solid #13a1cf;
+	transition: all 0.2s ease;
+}
+
+.s-top__btn-other:hover {
+	background: #13a1cf;
+	color: #fff;
+}
+
+.block {
+	width: 100%;
+	height: 100%;
+	background-color: #0d2831;
+}
+
+/* ========================================================= */
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+	.s-top__address {
+		margin-right: 20px;
+	}
+	.s-top__phone {
+		margin-right: 20px;
+	}
+	.brands__list-item {
+		margin-right: 25px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.s-top__top-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.s-top__address {
+		margin-bottom: 7px;
+	}
+	.s-top__clock {
+		margin-bottom: 7px;
+	}
+	.s-top__phone {
+		margin-top: 7px;
+	}
+	.s-top__inst-row {
+		margin-top: 7px;
+	}
+	.s-top__bottom-brands {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (max-width: 575px) {
+	.container {
+		width: 100%;
+	}
+	.s-top__top-left {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.s-top__top-right {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.s-top__bottom {
+		padding: 10px 0;
+	}
+	.s-top__bottom-row {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.s-top__bottom-logo {
+		margin: 0px 10px 10px 0px;
+	}
+}
